@@ -959,7 +959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Category 1 Question Here?
+  m_Text: Category 1 Question 1 Here?
 --- !u!222 &1515357194
 CanvasRenderer:
   m_ObjectHideFlags: 0
