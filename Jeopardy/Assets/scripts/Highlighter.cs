@@ -48,14 +48,26 @@ public class Highlighter : MonoBehaviour
         }
     }
 
-    private bool IsButtonSelected()
-    {
-        return ButtonStateManager.IsButtonSelected(gameObject.name);
-    }
-
     public void ResetButton()
     {
         button.image.color = originalColor;
         ButtonStateManager.SetButtonSelected(gameObject.name, false);
     }
+
+    public static void ResetAllButtons()
+    {
+        Highlighter[] highlighters = FindObjectsOfType<Highlighter>();
+        foreach (Highlighter h in highlighters)
+        {
+            h.ResetButton();
+        }
+    }
+
+    private bool IsButtonSelected()
+    {
+        return ButtonStateManager.IsButtonSelected(gameObject.name);
+ 
+    }
+
 }
+
