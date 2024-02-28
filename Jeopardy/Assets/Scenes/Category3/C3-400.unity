@@ -457,7 +457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 395086150}
         m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
         m_MethodName: OpenLevel
         m_Mode: 3
